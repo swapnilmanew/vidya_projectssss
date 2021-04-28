@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+:root {
+  --theme-color: #04a53e;
+}
+
+.act,
+.navbar ul li a:hover {
+  color: var(--theme-color) !important;
+  border-bottom: 1px solid var(--theme-color) !important;
+}
+body {
+  overflow-x: hidden;
+}
+.navbar-brand
+{
+  width:15px !important;
+}
+.theme-text {
+  color: var(--theme-color);
+}
+
+.theme-bg {
+  background: var(--theme-color);
+}
+
+.hr-row {
+  background: var(--theme-color);
+  height: 6px !important;
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+
+/* input fields */
+
+.form-control:focus {
+  border-color: var(--theme-color);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0px 0px 8px rgba(67, 194, 141, 0.5);
+}
+.form-control {
+  padding: 15px 50px;
+}
+
+.icon {
+  position: relative;
+}
+
+.icon i {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  z-index: 2;
+  color: var(--theme-color);
+  background: rgb(4, 165, 62, 0.1);
+  border-radius: 50%;
+  padding: 7px;
+}
+/* icon styling */
+
+.fa-dot-circle {
+  color: var(--theme-color);
+  background: rgb(214, 245, 226);
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 15px;
+}
+
+/* services section */
+
+.animated-cards i {
+  font-size: 50px;
+  color: var(--theme-color);
+  margin-bottom: 15px;
+}
+
+.animated-cards .card {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.animated-cards .card:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--theme-color);
+  bottom: -100%;
+  transition: 0.4s;
+  z-index: -2;
+}
+
+.animated-cards .card:hover::before {
+  bottom: 0px;
+}
+.animated-cards .card:hover p,
+.animated-cards .card:hover h4,
+.animated-cards .card:hover i,
+.animated-cards .card:hover a {
+  color: white !important;
+}
+.animated-cards .card:hover hr {
+  background: white;
+}
+
+/* testimonials styling */
+.testimonials p,
+.stats p {
+  text-align: center !important;
+}
+.testimonials img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* social media icons styling */
+
+.sm i {
+  margin-left: 5px;
+  background: rgb(255, 255, 255, 0.2);
+  padding: 7px 10px;
+}
+
+.sm-about i {
+  margin-left: 10px;
+  background: rgb(4, 165, 62, 0.1);
+  padding: 7px 10px;
+  transition: 0.5s;
+}
+
+.sm-about i:hover {
+  background: var(--theme-color) !important;
+  color: white;
+}
+.team {
+  position: relative;
+}
+.team .sm-about {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  bottom: 155px;
+  opacity: 0;
+  z-index: 1;
+}
+.team .sm-about i {
+  color: white;
+  background: rgb(255, 255, 255, 0.1);
+}
+.team .card .sm-about {
+  transition: 0.5s;
+}
+.team .card:hover .sm-about {
+  opacity: 1;
+  bottom: 165px;
+}
+
+.team img {
+  height: 300px !important;
+}
+
+.desk {
+  position: relative;
+  overflow: hidden !important;
+}
+.desk::before {
+  content: "";
+  background: var(--theme-color);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -99%;
+  transition: 0.5s;
+}
+
+.desk:hover::before {
+  left: 99%;
+}
+
+/* landing page designs */
+
+.landing {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+}
+
+.landing h1 {
+  padding-left: 50px;
+  font-size: 100px;
+}
+
+svg {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.equal {
+  height: 250px !important;
+}
+.about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://images.pexels.com/photos/443373/pexels-photo-443373.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+.services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://images.pexels.com/photos/4882959/pexels-photo-4882959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+.contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://images.pexels.com/photos/3999375/pexels-photo-3999375.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+.testimonials-landing {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://images.pexels.com/photos/3862627/pexels-photo-3862627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+.portfolio {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://images.pexels.com/photos/936194/pexels-photo-936194.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.profile img {
+  width: 300px;
+}
+
+/* brands */
+
+.brands img {
+  width: 50px;
+  height: 110px;
+  margin: auto;
+}
+
+/* portfolio */
+
+.gallery img {
+  margin-top: 20px;
+}
+
+.gallery .abs {
+  position: relative;
+}
+
+.gallery .abs .caption {
+  position: absolute;
+  background: rgb(4, 165, 62, 0.9);
+  bottom: 10px;
+  right: 30px;
+  color: white;
+  padding: 5px 5px 15px 10px;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+  transition: 0.5s;
+}
+
+.gallery .abs:hover .caption {
+  background: black;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+footer .container-fluid {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .landing h1 {
+    padding-left: 10px;
+    font-size: 70px !important;
+  }
+  .sm-about i {
+    margin-left: 10px !important;
+  }
+
+  .carousel-inner {
+    position: relative;
+  }
+
+  .hr-row {
+    width: 200px !important;
+  }
+}
